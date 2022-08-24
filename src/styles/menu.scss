@@ -1,0 +1,36 @@
+@import './Colors.scss';
+
+.MuiList-root {
+  width: 7%;
+  min-width: 64px;
+  height: 1087px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: $light-shadow;
+  background-color: $white;
+  
+  li.MuiMenuItem-root {
+    width: 20px;
+  }
+
+  li.MuiMenuItem-root:hover {
+    background-color: $white;
+  }
+
+  li.MuiMenuItem-root svg {
+    color: $gray;
+  }
+
+  li.MuiMenuItem-root svg.active {
+    color: $light-blue;
+  }
+
+  li.MuiMenuItem-root svg:hover {
+    color: $light-blue;
+  }
+
+  .MuiDivider-root {
+    width: 64px;
+  }
+}

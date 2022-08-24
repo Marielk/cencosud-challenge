@@ -1,0 +1,88 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Colors.scss';
+
+.drawerContainer {
+  .MuiPaper-root.MuiDrawer-paper{
+    width: 1239px;
+    height: 1149px;
+    background-color: $white;
+    box-shadow: $strong-shadow;
+    border-radius: 20px 0px 0px 20px;
+    padding: 0px 40px;
+  }
+
+  .MuiButtonBase-root.MuiIconButton-root.closeDrawerButton{
+    background-color: $white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 3000;
+    left: 193px;
+    top: 75px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .MuiBackdrop-root{
+    background: $backdrop-color;
+  }
+
+  svg{
+    color: $light-blue;
+  }
+
+  .HeaderGrid-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+    }
+  }
+  
+  .HeaderGrid-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 65px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  .Title {
+    @include form-title;
+    color: $text-color-primary;
+  }
+
+  .form-title {
+    @include form-label-title;
+    color: $text-color-gray;
+  }
+
+  .InfoTabContainer {
+    .MuiSelect-select{
+      min-width: 375px;
+    }
+    .MuiGrid-root.MuiGrid-container{
+      margin-top: 0px;
+    }
+    .MuiGrid-root.MuiGrid-item{
+      margin-top: 15px;
+      hr{
+        margin-top: 8px;
+      }
+    }
+    .MuiButton-root {
+      @include button-text-large;
+      background-color: $light-blue;
+      width: 142px;
+      height: 42px;
+      padding: 0px;
+      svg {
+        color: $white;
+      }
+    }
+  }
+}

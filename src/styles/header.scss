@@ -1,0 +1,29 @@
+@import './Colors.scss';
+@import './Fonts.scss';
+
+.MuiCardHeader-root {
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: $medium-shadow;
+  background-color: $white;
+
+  .MuiCardHeader-title {
+    @include nav-title;
+    margin-left: 25px;
+    color: $text-color-primary;
+  }
+
+  .MuiCardHeader-action {
+    margin-top: 0px;
+  }
+
+  .MuiCardHeader-action img {
+    width: 31px;
+    height: 34px;
+  }
+
+  .MuiCardHeader-avatar img {
+    width: 24px;
+    height: 24px;
+  }
+}

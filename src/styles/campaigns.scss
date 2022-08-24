@@ -1,0 +1,47 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Colors.scss';
+
+.Grid-button-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .MuiButton-root {
+    @include button-text-medium;
+    background-color: $success-green;
+    width: 135px;
+    height: 30px;
+    padding: 0px;
+  }
+  
+  .MuiButton-endIcon {
+    background-color: $dark-green;
+    height: 30px;
+    width: 38px;
+    border-radius: 0px 5px 5px 0px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -5px;
+  }
+}
+
+.Grid-button-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 65px;
+
+  .MuiButton-root {
+    @include button-text-large;
+    background-color: $light-blue;
+    width: 199px;
+    height: 42px;
+  }
+}
+
+.Title {
+  @include page-title;
+  margin-right: 16px;
+  color: $text-color-primary;
+}
+

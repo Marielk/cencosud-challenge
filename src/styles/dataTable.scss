@@ -1,0 +1,99 @@
+@import '../styles/Fonts.scss';
+@import '../styles/Colors.scss';
+
+.MuiTable-root {
+  font-size: 14px;
+  @include body-text;
+
+  svg {
+    color: $light-blue;
+  }
+  th.MuiTableCell-head  {
+    font-weight: 600;
+    padding: 10px 5px 10px 5px;
+    svg.arrowIcon {
+      color: $active-gray;
+      width: 14px;
+      position: relative;
+      top: 7px;
+      left: 5px;
+    }
+  }
+  td {
+    padding: 16px 5px 16px 5px;
+    max-width: 160px;
+  }
+  .MuiCheckbox-root svg{
+    color: $text-color-secondary;
+    width: 18px;
+  }
+  
+  .MuiInputBase-root.MuiInput-root:before {
+    border-bottom: none;
+  }
+}
+.MuiPaper-root.MuiPopover-paper {
+  ul{
+    width: 75px;
+    height: 81px;
+  }
+  li{
+    width: 100%;
+  }
+}
+.toolbarContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0px 16px 0px;
+  svg {
+    color: $light-blue;
+  }
+}
+
+@mixin label-shared {
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  color: $white;
+  width: min-content;
+}
+
+/* labels colors */
+
+.MuiPaper-root td span.one {
+  @include label-shared;
+  background-color: $info-blue;
+}
+.MuiPaper-root td span.two {
+  @include label-shared;
+  background-color: $success-green;
+}
+.MuiPaper-root td span.tree {
+  @include label-shared;
+  background-color: $warning-orange;
+  min-width: 125px;
+}
+.MuiPaper-root td span.four {
+  @include label-shared;
+  background-color: $select-gray;
+}
+
+/* search */ 
+.searchInput .MuiInputBase-root.MuiOutlinedInput-root{
+  width: 316px;
+  height: 36px;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: 1px solid $blue-gray;
+}
